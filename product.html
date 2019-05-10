@@ -1,0 +1,310 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta name = "format-detection" content = "telephone=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>irealtech</title>
+<meta name='keywords' content='irealtech' />
+<meta name='description' content='irealtech' />
+<meta name="author" content="" />
+
+
+
+
+
+<link href="css/reset.css" type="text/css" rel="stylesheet" /><link href="css/layout.css" type="text/css" rel="stylesheet" /><link href="css/common.css" type="text/css" rel="stylesheet" /><link href="css/index2.css" type="text/css" rel="stylesheet" /><link href="css/media.css" type="text/css" rel="stylesheet" /><link href="css/animate.css" type="text/css" rel="stylesheet" /><link href="css/wookmark.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/wow.js"></script>
+<script type="text/javascript" src="js/jquery.imagesloaded.js"></script>
+<script type="text/javascript" src="js/jquery.wookmark.js"></script>
+<script type="text/javascript" src="js/index_list.js"></script>
+<!--[if lt IE 9]>
+<script src="bts/js/html5shiv.min.js"></script>
+<script type="text/javascript" src="bts/js/respond.min.js"></script>
+<![endif]-->
+<title>
+
+</title></head>
+
+<body>
+
+	
+
+<script src="https://use.typekit.net/onl2png.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<style type="text/css">
+.outside_font{
+  font-family: "source-han-sans-simplified-c";
+  font-weight:100;
+  }
+
+</style>
+
+<script type="text/javascript">
+$(function(){
+	wow = new WOW({
+		animateClass: 'animated',
+		offset:100,
+		callback:function(box){
+		}
+	  }
+	);
+	wow.init();
+});
+</script>
+<script type="text/javascript">
+$(function(){
+	
+	$('header .nav_list li a').click(function () {
+    	$("html, body").animate({
+			scrollTop: $($(this).attr("href")).offset().top - 100 + "px"
+			}, {
+				duration: 500,
+				easing: "swing"
+			});
+		return false;
+	});
+
+	
+	$(".mobile_menu_ico").click(function(){
+		$(".page_mask").fadeIn();
+		$(".mobile_pop_menu_body").animate({"right":"0"},300);
+	});
+	$(".page_mask").click(function(){
+		$(".page_mask").fadeOut();
+		$(".mobile_pop_menu_body").animate({"right":"-100%"},300);
+	});
+	$(".mobile_pop_menu_body ul li a").click(function(){
+		
+		$(".page_mask").fadeOut();
+		$(".mobile_pop_menu_body").animate({"right":"-100%"},300);
+		
+		$("html, body").animate({
+			scrollTop: $($(this).attr("href")).offset().top - 50 + "px"
+			}, {
+				duration: 1000,
+				easing: "swing"
+			});
+		return false;
+	});
+});
+</script>
+<header>
+	<div class="warp">
+		<a href="index.html"><img src="images/logo.jpg" class="logo fl" /></a>
+		<ul class="nav_list clearfix fr">
+			<li><a href="#company">提供服务</a></li>
+			<li><a href="#protfolio">产品展示</a></li>
+			<li><a href="#contacts">联系我们</a></li>
+			<li><a href="index.html">首页</a></li>
+		</ul> 
+		<a href="javascript:;" class="mobile_menu_ico fr pc_hide"></a>                         
+	</div>
+</header>
+
+
+<div class="page_mask"></div>
+<div class="mobile_pop_menu_body pc_hide">
+	<ul>
+		<li><a href="#company"><i></i><span>COMPANY</span></a></li>
+		<li><a href="#protfolio"><i></i><span>PORTFOLIO</span></a></li>
+		<li><a href="#clients"><i></i><span>CLIENTS</span></a></li>
+		<li><a href="#contacts"><i></i><span>CONTACTS</span></a></li>
+		<li><a href="index.html"><i></i><span>HOME</span></a></li>
+	</ul>
+</div>
+	
+	<div class="out_body">
+		<section class="index_top_body" id="company">
+			<div class="warp">
+				<h3 class="outside_font wow fadeInUpSmall " data-wow-delay="0.3s">
+					椰果为您提供<br />Provide services
+				</h3>
+				<p class="outside_font wow fadeInUpSmall" data-wow-delay="0.4s">
+					<p class="c1o" text-size:24px>展览展示</p>
+					<span class="mobile_hide">
+						展厅策划、展厅设计、沙盘互动控制、投影沙盘、4D影院、环幕拼接投影、智能式语音导游系统、展厅声光电、展厅多媒体、多媒体中控系统等展览展示类创意服务。
+					</span>
+				</p>
+				<p class="outside_font wow fadeInUpSmall" data-wow-delay="0.4s">
+					<p class="c1o" text-size:24px>多媒体互动</p>
+					<span class="mobile_hide">
+						多媒体互动控制、幻影成像、拍摄电子签名、3D幻像、智能式语音导游系统、电子卷轴魔幻书、互动橱窗、电子魔镜、墙面投影互动、桌面投影互动、隔空翻书、商场导购系统、地面投影系统、互动展台等。
+					</span>
+				</p>
+				<p class="outside_font wow fadeInUpSmall" data-wow-delay="0.4s">
+					<p class="c1o" text-size:24px>多媒体产品工程定制</p>
+					<span class="mobile_hide">
+						多媒体软件及控制设备定制开发、排队系统定制、工程投影机、触摸显示器、触摸屏一体机、广告机等。
+					</span>
+				</p>
+			</div>
+		</section>
+
+
+		<section class="index_list_body" id="protfolio">
+			<div class="warp">
+				<div id="main" role="main">
+					<ul id="tiles">
+						<!-- -->
+						<li class="wow fadeInUpSmall" data-wow-delay="0.2s" >
+							<a href="product_d1.html">
+							<div class="img_out">
+								<img src="images/index_img_1.jpg" />
+								<div class="mask" >
+									<h3>电子沙盘互动系统</h3>
+									<p>沙盘互动系统</p>
+									<p>语音解说沙盘互动系统</p>
+									<p>简捷型多媒体沙盘互动系统</p>
+									<p>展示型多媒体沙盘互动系统</p>
+									<p>绚丽型多媒体沙盘互动系统</p>
+									<p>数字投影沙盘系统</p>
+									<p>升降局部沙盘</p>
+									<p>战斗沙盘</p>
+								</div>
+							</div>	</a>
+						</li>
+						<!-- -->
+						<li class="wow fadeInUpSmall" data-wow-delay="0.3s">
+							<a href="product_d2.html">
+							<div class="img_out">
+								<img src="images/index_img_2.jpg" />
+								<div class="mask">
+									<h3>无缝大屏幕拼接系统</h3>
+									<p>360°环幕</p>
+									<p>户外立体投影</p>
+									<p>投影融合</p>
+									<p>异形投影</p>
+									<p>液晶拼接</p>
+									<p>球面容融</p>
+									<p>LED大屏</p>
+								</div>
+							</div>	</a>
+						</li>
+						<!-- -->
+						<li class="wow fadeInUpSmall" data-wow-delay="0.4s">
+							<a href="product_d3.html">
+							<div class="img_out">
+								<img src="images/index_img_3.jpg" />
+								<div class="mask">
+									<h3>全息互动成像系列</h3>
+									<p>360°立体成像</p>
+									<p>全息互动橱窗</p>
+									<p>幻影成像</p>
+									<p>270°立体成像</p>
+									<p>虚拟讲解</p>
+									<p>魔幻橱窗</p>
+								</div>
+							</div>	</a>
+						</li>
+						<!-- -->
+						<li class="wow fadeInUpSmall" data-wow-delay="0.5s">
+							<a href="product_d5.html">
+							<div class="img_out">
+								<img src="images/index_img_4.jpg" />
+								<div class="mask">
+									<h3>互动投影类</h3>
+									<p>魔镜</p>
+									<p>桌面投影互动</p>
+									<p>地面投影互动</p>
+									<p>墙面投影互动</p>
+									<p>互动吧台</p>
+									<p>多点触摸桌面</p>
+									<p>隔空翻书</p>
+									<p>超级互动桌面</p>
+								</div>
+							</div>	</a>
+						</li>
+						<!-- -->
+						<li class="wow fadeInUpSmall" data-wow-delay="0.6s">
+							<a href="product_d4.html">
+							<div class="img_out">
+								<img src="images/index_img5.jpg" />
+								<div class="mask mobile_txt_style">
+									<h3>魔幻书、电子签到等</h3>
+									<p>电子签到</p>
+									<p>电子卷轴魔幻书</p>
+									<p>互动视频留言</p>
+									<p>智能式语音导游系统</p>
+									<P>拍摄留念</P>
+								</div>
+							</div>	</a>
+						</li>
+						<!-- -->
+						<li class="wow fadeInUpSmall" data-wow-delay="0.7s">
+							<a href="product_d7.html">
+							<div class="img_out">
+								<img src="images/index_img_6.jpg" />
+								<div class="mask">
+									<h3>触摸互动类</h3>
+									<p>触摸查询软件<p>
+									<p>触摸屏一体机<p>
+									<p>大尺寸触摸屏</p>
+								</div>
+							</div>	</a>
+						</li>
+						<!-- -->
+						<li class="wow fadeInUpSmall" data-wow-delay="0.8s">
+							<a href="product_d6.html">
+							<div class="img_out">
+								<img src="images/index_img_7.jpg" />
+								<div class="mask">
+									<h3>虚拟仿真游戏</h3>
+									<p>虚拟足球<p>
+									<p>虚拟乒乓球</p>
+									<p>打击乐器</p>
+									<p>模拟射击</p>
+									<p>虚拟划船</p>
+								</div>
+							</div>	</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="index_customer_body" id="clients">
+			<div class="warp">
+				<!--<h3 class="tit outside_font">我们有幸合作的品牌</h3>
+				<ul class="clearfix">
+					<li class="wow zoomIn" data-wow-delay="0.2s"><img src="images/logo_1.png" /></li>
+					<li class="wow zoomIn" data-wow-delay="0.3s"><img src="images/logo_2.png" /></li>
+					<li class="wow zoomIn" data-wow-delay="0.4s"><img src="images/logo_3.png" /></li>
+					<li class="wow zoomIn" data-wow-delay="0.5s"><img src="images/logo_4.png" /></li>
+					<li class="wow zoomIn" data-wow-delay="0.6s"><img src="images/logo_5.png" /></li>
+					<li class="wow zoomIn" data-wow-delay="0.7s"><img src="images/logo_6.png" /></li>
+					<li class="wow zoomIn" data-wow-delay="0.8s"><img src="images/logo_7.png" /></li>
+				</ul>-->
+			</div>
+		</section>
+
+
+
+		
+
+<footer id="contacts">
+	<div class="warp">
+		<div class="top_body">
+			<div class="fl">
+				<h3>和我们取得联系</h3>
+			</div>
+			<a href="contact.html"  class="fr">与我们联系</a>
+		</div>
+		
+		
+		
+	</div>
+</footer>
+	</div>
+	
+	
+
+</body>
+</html>

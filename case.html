@@ -1,0 +1,1209 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" itemscope>
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>案例列表</title>
+	<meta name='keywords' content='"始于椰果，精于椰果"' />
+	<meta name='description' content='秉承"创新、合作、品质、信誉"的经营理念竭诚为客户提供先进技术、领先的解决方案和全面的IT专业服务,联系电话：188-5929-0801。'/> 
+	<meta name="author" content="良好的服务品质是我们赢得市场的基础，我们耐心倾听客户的每一个建议与意见，并使之成为我们不断进步的阶梯。" />
+
+
+
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+      
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+  <script src="js/jquery-2.0.2.min.js"></script>
+
+    <script src="js/gumby.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="css/page.css">
+
+  
+</head>
+<body style="overflow-y: scroll;">
+    <!-- preloader / loading gif is located in ../images/ 
+change background color in style.css -->
+    <div id="preloader">
+        <div id="status">
+            &nbsp;
+        </div>
+    </div>
+    <!-- Navigation header -->
+    
+<!-- Navigation header -->
+<header class="main custom-scroll">
+<!-- #header-scrollarea adds custom scrollbar for header -->
+	<div id="header-scrollarea">
+	<!-- sliding-header logo will not display on mobile devices -->
+        <div class="logo">
+            <img src="images/logo.png" alt="logo" gumby-retina>
+        </div>
+	<!-- navigation -->
+		<nav class="main-nav">
+			<ul class="site-nav">
+			<!-- li class active for active page link
+				add gumby-trigger=#id to target drawer with child navigation -->
+				<li class="active"><a href="index.html">首页<span>Home</span></a></li>
+				<li class="active"><a href="product.html">产品服务<span>Service</span></a></li>
+				<li class="active"><a href="case.html">案例分享<span>Case Sharing</span></a></li>
+                <li class="active"><a href="about.html">关于我们<span>About Us</span></a></li>
+                <li class="active"><a href="contact.html">联系我们<span>Contact Us</span></a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<!-- header trigger -->
+<div class="trigger">
+    <div class="trigger-box" id="trigger">
+        <a class="switch open-header" gumby-trigger="header.main"><i class="fa fa-bars"></i>
+        </a><a class="switch close-header" gumby-trigger="|header.main"><i class="fa fa-times">
+        </i></a>
+    </div>
+    <!-- side logo mark  -->
+    <div class="side-logo">
+    </div>
+    <!-- back to top button displays after 850px 
+		vertical scroll value in ../js/main.js -->
+    <div class="back-to-top">
+        <a id="top-trigger"><i class="fa fa-angle-up"></i></a>
+    </div>
+</div>
+
+    <!-- Main content block - all page content -->
+    <div class="content custom-scroll">
+        <!-- blocker active with active header -->
+        <div class="blocker">
+        </div>
+        <!-- #scrollarea adds custom scrollbar for main content -->
+        <div id="scrollarea">
+            <!-- action class for animating page content when header is active -->
+            <div class="action step-right">
+                
+<!-- #crumbs for page title bar and top navigation -->
+
+
+
+
+<script>
+
+    $(function() {
+
+        $('#filters li').each(function(index) {
+            var cid = '';
+            var id = $(this).find("a").attr("id");
+           
+            if (id == cid) {
+                $("#siteHeader_tip").val("1");
+                $('#filters li').find("a").removeClass("selected");
+                $(this).find("a").addClass("selected");
+                
+            }
+        });
+
+        $("#filters li a").click(function() {
+            var i = $("#projects").find("li").length;
+
+            var $container = $('.grid.filter');
+          
+            $.ajax({
+                url: '/ashx/request.aspx',
+                data: 'action=getcases&cid=' + $(this).attr("id"),
+                cache: false,
+                type: 'POST',
+                success: function(data) {
+                    var str = data;
+                    
+                    if (str != "") {
+                        $("#siteHeader_tip").val("1");
+
+                        $container.find("li").remove();
+                        $container.append(str).isotope('appended', str);
+                        $(".content #scrollarea").getNiceScroll().resize();
+
+                    }
+                }
+            })
+        });
+    });
+
+  
+</script>
+
+<div id="crumbs" class="white">
+    <div class="row large">
+        <div class="eight columns">
+            <input name="siteHeader$tip" type="hidden" id="siteHeader_tip" />
+            <!-- page title -->
+            <!--portfolio filters -->
+            <div id="options">
+                <ul id="filters" class="option-set">
+                    <li><a href="#" data-filter="*" class="selected">所有案例</a></li>
+                    
+                            <li><a id="72057594037927936" href="#" data-filter=".a72057594037927936">
+                                2018年-至今</a></li>
+                        
+                            <li><a id="144115188075855872" href="#" data-filter=".a144115188075855872">
+                                2015年-2017年</a></li>
+                        
+                            <li><a id="216172782113783808" href="#" data-filter=".a216172782113783808">
+                                2012年-2014年</a></li>
+                        
+                            <li><a id="288230376151711744" href="#" data-filter=".a288230376151711744">
+                                2009年-2011年</a></li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="four columns text-right">
+            <!-- top on-page nav -->
+            <ul class="nav-icon-list">
+                <li><a class="planner-btn" href="contact.html"><span>我有需求</span><i class="fa fa-book"></i></a></li>
+                <li><a class="search-btn"><span>搜索</span><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- search modal -->
+<div class="search-modal">
+    <div class="search-field">
+        <input class="search input" type="search" placeholder="请输入您要查找的内容...">
+    </div>
+    <a class="remove-search"><i class="fa fa-times"></i></a>
+</div>
+
+
+
+                <!-- begin projects -->
+                <section class="work grey stripe-bg">
+			<style type="text/css">
+			    #projects li
+			    {
+			        position: static !important;
+			        float: left;
+			    }
+			</style>
+			<ul class="grid filter times-three basic clearfix" id="projects">
+				<!-- project 
+		 remember to add your data-filter as class 
+		 -->
+		        <!-- 18年-至今 -->
+				<!--2019-->
+				<li class="grid-item a72057594037927936 ">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201901.jpg" alt="图片1" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2019年</h1>
+                                <h6 class="project-cat">福建三元达多媒体展厅</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">01</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<li class="grid-item a72057594037927936 ">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201902.png" alt="图片1" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2019年</h1>
+                                <h6 class="project-cat">福建深沪湾海底古森林遗迹自然保护区海洋科普馆</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">02</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<!--2018-->
+		                <li class="grid-item a72057594037927936 ">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201804.jpg" alt="图片1" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+									<h1 class="grid-title">2018年</h1>
+                                <h6 class="project-cat">施耐德(厦门)互动多媒体展厅</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">03</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+					<li class="grid-item a72057594037927936 ">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201805.jpg" alt="图片1" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+									<h1 class="grid-title">2018年</h1>
+                                <h6 class="project-cat">厦门华润燃气多媒体系统</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">04</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+					<li class="grid-item a72057594037927936 ">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201803.jpg" alt="图片1" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+									<h1 class="grid-title">2018年</h1>
+                                <h6 class="project-cat">厦门水务集团党群活动中心</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">05</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+	
+				<li class="grid-item a72057594037927936 ">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201806.jpg" alt="图片1" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2018年</h1>
+                                <h6 class="project-cat">漳州古雷海洋三所海洋科普教育基地</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">06</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<li class="grid-item a72057594037927936 ">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201808.jpg" alt="图片1" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2018年</h1>
+                                <h6 class="project-cat">厦门日华科技沙盘互动系统</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">07</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<li class="grid-item a72057594037927936 ">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201810.png" alt="图片1" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2018年</h1>
+                                <h6 class="project-cat">李林小学交通安全沙盘控制系统</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">08</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<li class="grid-item a72057594037927936 ">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201801.png" alt="图片1" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2018年</h1>
+                                <h6 class="project-cat">福建海事局海上应急演练模拟展示评估系统文化展厅</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">09</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<li class="grid-item a72057594037927936 ">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201802.jpg" alt="图片1" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2018年</h1>
+                                <h6 class="project-cat">福州长乐上湖部队廉政展厅</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">10</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<li class="grid-item a72057594037927936 ">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201807.jpg" alt="图片1" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2018年</h1>
+                                <h6 class="project-cat">厦门水产所海洋生物展</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">11</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				
+		            <!-- 15年-17年 -->
+				<!--2017-->
+				<li class="grid-item a144115188075855872">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201702.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2017年</h1>
+                                <h6 class="project-cat">泰普医学诊断博览馆多媒体系统与设备</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">12</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<li class="grid-item a144115188075855872">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201701.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2017年</h1>
+                                <h6 class="project-cat">厦门钨业技术中心展厅多媒体系统</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">13</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<li class="grid-item a144115188075855872">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201704.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2017年</h1>
+                                <h6 class="project-cat">先进轨道交通科普展示系统</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">14</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<li class="grid-item a144115188075855872">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201705.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2017年</h1>
+                                <h6 class="project-cat">武汉野战国防园多媒体展厅</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">15</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<li class="grid-item a144115188075855872">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201703.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2017年</h1>
+                                <h6 class="project-cat">泉州天后宫多媒体展示馆</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">16</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				
+				<!--2016-->
+				<li class="grid-item a144115188075855872">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201601.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2016年</h1>
+                                <h6 class="project-cat">南昌奋发集团安义小微创业园多媒体售楼展厅</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">17</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<li class="grid-item a144115188075855872">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201603.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2016年</h1>
+                                <h6 class="project-cat">厦门海洋三所鲸豚馆</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">18</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<li class="grid-item a144115188075855872">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201602.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2016年</h1>
+                                <h6 class="project-cat">漳州云霄文化馆</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">19</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<li class="grid-item a144115188075855872">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201604.png" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2016年</h1>
+                                <h6 class="project-cat">海洋典型极端环境动态模拟平台项目多媒体系统</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">20</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<!--2015-->
+		                <li class="grid-item a144115188075855872">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201501.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2015年</h1>
+                                <h6 class="project-cat">深圳福田检查院荣誉馆</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">21</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				
+				<li class="grid-item a216172782113783808">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201401.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2014年</h1>
+                                <h6 class="project-cat">石狮市纺织服装基地规划展厅</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">22</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				
+				<!--2013-->
+				
+				
+				<li class="grid-item a216172782113783808">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201301.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2013年</h1>
+                                <h6 class="project-cat">厦门万科湖心岛多媒体展厅</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">23</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<!--2012-->
+		                <li class="grid-item a216172782113783808">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201201.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2012年</h1>
+                                <h6 class="project-cat">漳州红树林湿地保护展厅</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">24</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				
+				<li class="grid-item a216172782113783808">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201106.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2012年</h1>
+                                <h6 class="project-cat">漳州国有林场森林碳汇馆</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">25</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				
+		            <!-- 09年-11年 -->
+				
+				
+				
+				
+				<!--2011-->
+				<li class="grid-item a288230376151711744">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201107.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2011年</h1>
+                                <h6 class="project-cat">泉州龙门规划展厅</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">26</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<li class="grid-item a288230376151711744">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201105.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2011年</h1>
+                                <h6 class="project-cat">泉州梅山规划展厅</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">27</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<li class="grid-item a288230376151711744">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201101.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2011年</h1>
+                                <h6 class="project-cat">泉州磁灶规划展厅</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">28</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<li class="grid-item a288230376151711744">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201102.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2011年</h1>
+                                <h6 class="project-cat">泉州仑苍规划展厅</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">29</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<li class="grid-item a288230376151711744">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201103.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2011年</h1>
+                                <h6 class="project-cat">泉州东石规划展厅</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">30</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<!--2010-->
+				<li class="grid-item a288230376151711744">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201104.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2010年</h1>
+                                <h6 class="project-cat">泉州水头海联创业园规划展厅</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">31</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				
+				
+				<li class="grid-item a288230376151711744">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/201001.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2010年</h1>
+                                <h6 class="project-cat">泉州水头规划展厅</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">32</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<!--2009-->
+		               
+				<li class="grid-item a288230376151711744">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/200901.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2009年</h1>
+                                <h6 class="project-cat">安踏集团海外迪拜鞋材科技展厅</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">33</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+				<li class="grid-item a288230376151711744">
+                        
+                        	<div class="grid-project">
+                                <!-- project image -->
+                                <div class="img-box">
+                                    <img src="images/200902.jpg" alt="" class="zoom-on-hover">
+                                    <div class="icon-box">
+                                        <a class="do_popup" href=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+
+                                <a title="View Project" href="">
+                                <div class="project-info">
+                                    <h1 class="grid-title">2009年</h1>
+                                <h6 class="project-cat">晋江安踏集团总部多媒体互动展厅</h6>
+                                    <!-- project index -->
+                                    <div class="project-index">
+                                        <span class="number">34</span><i class="fa fa-link"></i>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+					</li>
+			</ul>
+		
+			
+            <div class="list_btm"></div>
+			<!-- clear floats -->
+			<div class="clear">
+			</div>
+			</section>
+                <!-- widgetized footer -->
+                
+<!-- widgetized footer -->
+<style type="text/css">
+.row .four.columns{width:23.3%;}
+.link_line{padding-top:10px;}
+</style>
+<footer class="widget-ftr stripe-bg" id="footer_top">
+	<div class="content-block dark">
+    	<div class="row large midtoppadding">
+        	<!-- widget -->
+        	<div class="four columns widget-block">
+            	<h6 class="widget-heading"><img src="images/footerLogo.png" /></h6>
+            	<h5 class="style_1">无论你在世界的任何一个地方，<br />只要看见COCO公司的商标，<br />就是质量和信誉的保证。</h5>
+                <!--<dl class="footer_link clearfix">
+                	<dd><a href="service.html">新业务</a></dd>
+                    <dd><a href="news_details.html#216172782113783808">新闻+ VIEWS</a></dd>
+                    <dd><a href="job.html">招聘</a></dd>                    
+                </dl>-->
+        	</div>
+        	<!-- widget -->
+        	
+        	<!-- widget -->
+        	<div class="four columns widget-block">
+            	<h6 class="widget-heading title_1">和我们取得联系</h6>
+                <h3>188-5929-0801</h3>
+            	<p class="greytext midmargin meta">
+                 	厦门思明观音山运营中心8号楼
+            	</p>
+        	</div>
+        	
+    	</div>
+	</div>
+</footer>
+<!-- site credit -->
+<!--<footer id="colophon">
+	<div class="row large">
+		<div class="six columns">
+    		<p>
+         		&copy; IREAL 2015. All Rights Reserved
+   	 		</p>
+		</div>-->
+		<div class="six columns">
+            <!-- social network links -->
+            <div class="text-right">
+                <p></p>
+            </div>
+		</div>
+	</div>
+</footer>
+
+ 
+
+            </div>
+            <!-- action -->
+        </div>
+        <!-- scrollarea -->
+    </div>
+    <!-- end div.content -->
+
+  
+
+    
+<!-- only include animate.js on 
+	pages you want to use animations on
+	<script src="js/animate.js"></script> -->
+
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+	   chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7 ]>
+	<script src="//ajax.googleapis.com/ajax/chrome-frame/1.0.3/CFInstall.min.js"></script>
+	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+	<![endif]-->
+
+    <script type="text/javascript">
+        var w = window.screen.width;
+        var str = "";
+        var i = 2;
+        var flag = true;
+
+        $(function() {
+
+
+            var fakeElement = {};
+            fakeElement.create = function() {
+                return '<li class="grid-item a288230376151711744 "><div class="grid-project"><div class="img-box"><img src="images/2016022406013532553.jpg" alt="project" class="zoom-on-hover"><div class="icon-box"><a class="do_popup" href="javascript:;" onclick="url(18,288230376151711744)"><i class="fa fa-plus"></i></a></div></div><a title="View Project" href="javascript:;" onclick="url(18,288230376151711744)"><div class="project-info"><h1 class="grid-title">MOXA 专题网站</h1><h6 class="project-cat">活动网站 Minisite</h6><div class="project-index"><span class="number"></span><i class="fa fa-link"></i></div></div></a></div></li>';
+            };
+            fakeElement.getGroup = function() {
+                //                newEls = '';
+                //                i++;
+                //                $.ajax({
+                //                    url: '/ashx/request.aspx',
+                //                    data: 'action=cases&pageindex=' + i + "&w=" + w,
+                //                    cache: false,
+                //                    type: 'POST',
+                //                    success: function(data) {
+                //                        str = data;
+                //                        alert(data);
+                //                    }
+                //                })
+                //                newEls += str;
+                //                return newEls;
+            };
+
+            $(".content #scrollarea").on("scroll", function() {
+
+                var tip = $("#siteHeader_tip").val();
+                var scroll_top = $("#ascrail2000 div").css("top").split("px")[0];
+                var scroll_height = $("#ascrail2000 div").css("height").split("px")[0];
+                var win_height = $(window).height();
+                var $container = $('.grid.filter');
+                var $newEls = "";
+                if (parseInt(scroll_top) + parseInt(scroll_height) + 100 >= win_height && flag && tip != "1") {
+                    i++;
+
+                    $.ajax({
+                        url: '/ashx/request.aspx',
+                        data: 'action=cases&pageindex=' + i + "&w=" + w,
+                        cache: false,
+                        type: 'POST',
+                        success: function(data) {
+                            var str = data;
+                            $newEls = data;
+                            if (str != "") {
+                                $container.append($newEls).isotope('appended', $newEls);
+                                flag = false;
+                                $(".content #scrollarea").getNiceScroll().resize();
+                            }
+                        }
+                    })
+                }
+
+                /*
+                var list_btm = $(".list_btm").offset().top;
+                if (list_btm < 500 && flag == true) {
+                var $container = $('.grid.filter');
+                var $newEls = $(fakeElement.getGroup());
+
+                $container.append($newEls).isotope('appended', $newEls);
+                flag = false;
+
+
+                }
+                */
+            });
+
+            setInterval(function() {
+                flag = true;
+            }, 850);
+
+
+            $(window).scroll(function() {
+
+                var scroll_top = $(window).scrollTop();
+                var scroll_height = $(window).height();
+                var win_height = $(document).height();
+                var $newEls = "";
+                var $container = $('.grid.filter');
+
+
+                if (parseInt(scroll_top) + parseInt($(window).height()) +550 >= win_height && flag) {
+                   // alert(scroll_top+"  "+scroll_height+"  "+win_height);
+                    i++;
+                    $.ajax({
+                        url: '/ashx/request.aspx',
+                        data: 'action=cases&pageindex=' + i + "&w=" + w,
+                        cache: false,
+                        type: 'POST',
+                        success: function(data) {
+                            $newEls = data;
+                            $container.append($newEls).isotope('appended', $newEls);
+                            flag = false;
+                            $(".content #scrollarea").getNiceScroll().resize();
+                        }
+                    })
+                }
+
+            });
+        });
+    </script>
+
+</body>
+</html>
