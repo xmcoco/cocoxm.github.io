@@ -1,0 +1,318 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" itemscope>
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>厦门椰果多媒体科技有限公司</title>
+	<meta name='keywords' content='"始于椰果，精于椰果"' />
+	<meta name='description' content='秉承"创新、合作、品质、信誉"的经营理念竭诚为客户提供先进技术、领先的解决方案和全面的IT专业服务,联系电话：188-5929-0801。'/> 
+	<meta name="author" content="良好的服务品质是我们赢得市场的基础，我们耐心倾听客户的每一个建议与意见，并使之成为我们不断进步的阶梯。" />
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="css/page.css">
+    
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+    <script src="js/jquery-2.0.2.min.js" type="text/javascript"></script>
+  
+  
+</head>
+<body>
+    <!-- preloader / loading gif is located in ../images/ 
+change background color in style.css -->
+    <div id="preloader">
+        <div id="status">
+            &nbsp;
+        </div>
+    </div>
+    <!-- Navigation header -->
+    
+<!-- Navigation header -->
+<header class="main custom-scroll">
+<!-- #header-scrollarea adds custom scrollbar for header -->
+	<div id="header-scrollarea">
+	<!-- sliding-header logo will not display on mobile devices -->
+        <div class="logo">
+            <img src="images/logo.png" alt="logo" gumby-retina>
+        </div>
+	<!-- navigation -->
+		<nav class="main-nav">
+			<ul class="site-nav">
+			<!-- li class active for active page link
+				add gumby-trigger=#id to target drawer with child navigation -->
+				<li class="active"><a href="index.html">首页<span>Home</span></a></li>
+				<li class="active"><a href="product.html">产品服务<span>Service</span></a></li>
+				<li class="active"><a href="case.html">案例分享<span>Case Sharing</span></a></li>
+                <li class="active"><a href="news.html">新闻资讯<span>News</span></a></li>
+                <li class="active"><a href="about.html">关于我们<span>About Us</span></a></li>
+                <li class="active"><a href="contact.html">联系我们<span>Contact Us</span></a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<!-- header trigger -->
+<div class="trigger">
+    <div class="trigger-box" id="trigger">
+        <a class="switch open-header" gumby-trigger="header.main"><i class="fa fa-bars"></i>
+        </a><a class="switch close-header" gumby-trigger="|header.main"><i class="fa fa-times">
+        </i></a>
+    </div>
+    <!-- side logo mark  -->
+    <div class="side-logo">
+    </div>
+    <!-- back to top button displays after 850px 
+		vertical scroll value in ../js/main.js -->
+    <div class="back-to-top">
+        <a id="top-trigger"><i class="fa fa-angle-up"></i></a>
+    </div>
+</div>
+
+    <!-- Main content block - all page content -->
+    <div class="content custom-scroll">
+        <!-- blocker active with active header -->
+        <div class="blocker">
+        </div>
+        <!-- #scrollarea adds custom scrollbar for main content -->
+        <div id="scrollarea">
+            <!-- action class for animating page content when header is active -->
+            <div class="action step-right">
+                <!-- #crumbs for page title bar and top navigation -->
+                
+<!-- #crumbs for page title bar and top navigation -->
+<div id="crumbs" class="white">
+    <div class="row large">
+        <!-- page title -->
+        <div class="six columns">
+            <h6 class="sub-heading">
+            </h6>
+        </div>
+        <div class="six columns text-right">
+            <!-- project navigation -->
+            <ul class="icon-nav">
+                <li><a href="news_details.html#128/72057594037927936" title="Previous Project"><i class="fa fa-arrow-left"></i></a>
+                </li>
+                <li><a href="news.html" title="All Projects"><i class="fa fa-th"></i></a>
+                </li>
+                <li><a href="#" title="Next Project"><i class="fa fa-arrow-right"></i></a>
+                </li>
+            </ul>
+            <!-- top on-page nav -->
+            <ul class="nav-icon-list">
+                <li><a class="planner-btn" href="contact.html"><span>我有需求</span><i class="fa fa-book"></i></a></li>
+                <li><a class="search-btn"><span>搜索</span><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- search modal -->
+<div class="search-modal">
+    <div class="search-field">
+        <input class="search input" type="search" placeholder="请输入您要查找的内容...">
+    </div>
+    <a class="remove-search"><i class="fa fa-times"></i></a>
+</div>
+<script src="js/jquery-2.0.2.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function() {
+        $('.search').bind('keypress', function(event) {
+            if (event.keyCode == "13") {
+                var key = $('.search').val();
+                $.ajax({
+                    url: '/ashx/request.aspx',
+                    data: 'action=sel&key=' + key,
+                    cache: false,
+                    type: 'POST',
+                    success: function(data) {
+                        window.location.href = "/case/";
+                    }
+                })
+
+
+
+            }
+        });
+    });
+</script>
+
+                <!-- begin notes -->
+                <section class="grey stripe-bg">
+				<div class="two-third">
+					<!-- begin posts -->
+					<div id="single-post">
+						<!-- post container -->
+                        <div id="news_details">
+                            <ul id="posts" style="" class="grid alt-posts">
+                                <!-- begin post -->
+                                <li class="post">
+                                <!-- post  img header -->
+                                <div class="post-img">
+                                    
+                                </div>
+                                <div class="post-info">
+                                    <!-- post title -->
+                                    <h1 class="grid-title">深沪湾海底古森林遗迹自然保护区海洋科普馆</h1>
+                                    <div class="post-meta">
+                                        <span style="display:none">发布时间：<span>2018.07.18</span></span>
+                                        <span>类型：<span>公司新闻动态</span></span>
+                                    </div>
+                                    <div class="post-content">
+										<section class="_editor" data-support="96编辑器" data-style-id="24648"><section style="margin:10px 0px;"><section style="margin-top: -4px; padding: 15px; background-color: rgb(239, 239, 239); box-sizing: border-box;"><section><p style="letter-spacing: 2px;"><span style="font-size: 14px;">凌晨5点多，当人们还在睡梦中的时候，我们正披星戴月赶往深沪湾海底古森林施工现场。</span></p></section></section><section style="margin-top:-4px;width: 100%;transform: rotate(0deg);-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-ms-transform: rotate(0deg);-o-transform: rotate(0deg);" data-width="100%"><section style="width: 50px;height: 4px;background-color: #fcb42b;color: #fefefe;"><br></section></section></section></section><p><span style="font-family: 微软雅黑; font-size: 14px;"><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUribdHIial7JS7ZJhTxuM4oDfRO2NNdSuyfmR9AsjUkwFOz2BVnIOWPZQ/0"  alt="微信图片_20190718095042.jpg" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUribdHIial7JS7ZJhTxuM4oDfRO2NNdSuyfmR9AsjUkwFOz2BVnIOWPZQ/0"></span></p><section class="_editor" data-support="96编辑器" data-style-id="24551"><section style="margin:10px 0px;"><section style="width:30px;height:9px;background:#fcb42b;"></section><section style="margin-top: -5px; border-top: 1px solid rgb(252, 180, 43); border-bottom: 1px solid rgb(252, 180, 43); padding: 3px 15px; box-sizing: border-box;"><p style="margin: 3px;color: #fcb42b;font-size: 14x;"><span style="font-size: 14px; color: #353232;">炎热的夏天，他们却依然挥洒着汗水，加班加点调试展厅设备，为的就是按时保质保量的完成展厅的布置，将展厅最好的一面展现在众人面前。</span></p></section><section style="margin-left:auto;width:30px;height:9px;background:#fcb42b;align-self:flex-end;margin-top: -5px;"><br></section></section></section><section class="_editor"><section class="_editor" data-support="96编辑器" data-style-id="24666"><section style="margin-top: 10px;margin-bottom: 10px;text-align: center;"><section style="display: flex;width: 100%;justify-content: space-around;" data-width="100%"><section style="width: 40%;margin-top: 10px;" data-width="40%"><section style="border-top: 2px solid #ffdd6d;margin-top: 12px;box-sizing: border-box;"></section></section><section style="margin-left:8px;margin-right:8px;width:4em;"><img src="http://mmbiz.qpic.cn/mmbiz_gif/Ljib4So7yuWjjvcS70NecHLcxagEodW97yb3j56RVXqHLAFmwLT1O4WXGSuNBK9BJaRlZcplBexjjFe9PZ1FeaQ/640?wx_fmt=gif" _src="http://mmbiz.qpic.cn/mmbiz_gif/Ljib4So7yuWjjvcS70NecHLcxagEodW97yb3j56RVXqHLAFmwLT1O4WXGSuNBK9BJaRlZcplBexjjFe9PZ1FeaQ/640?wx_fmt=gif"></section><section style="width: 40%;margin-top: 10px;" data-width="40%"><section style="border-top: 2px solid #ffdd6d;margin-top: 12px;box-sizing: border-box;"><br></section></section></section></section></section><section class="_editor" data-support="96编辑器" data-style-id="24559"><section style="margin-top: 10px; margin-bottom: 10px; text-align: center;"><section style="display:inline-block;"><section style="display: flex;justify-content:center;align-items: center;"><section><section style="width:15px;height:2px;background-color:#ffdd6d;"></section><section style="margin-left:auto;margin-top:3px;margin-bottom:3px;width:10px;height:2px;background-color:#ffdd6d;"></section><section style="width:15px;height:2px;background-color:#ffdd6d;"></section></section><section style="border-style: solid; border-width: 1px; border-color: rgb(255, 221, 109); padding: 5px 0px; box-sizing: border-box;"><section style="background-color: rgb(255, 221, 109); padding: 0px 15px; box-sizing: border-box;"><p style="letter-spacing:2px;"><strong><span style="color: #353232; font-size: 14px;">深沪湾海底古森林遗迹自然保护区海洋科普馆一楼</span></strong></p></section></section><section style="display: flex;justify-content:center;align-items: center;"><section><section style="width:15px;height:2px;background-color:#ffdd6d;"></section><section style="margin-top:3px;margin-bottom:3px;width:10px;height:2px;background-color:#ffdd6d;"></section><section style="width:15px;height:2px;background-color:#ffdd6d;"><br></section></section></section></section></section></section></section></section><section class="_editor" data-support="96编辑器" data-style-id="24326"><section style="margin:10px 0px;"><section style="background: #ffd522;height: 50px;width: 50px;border-radius: 0px 0px 50px;box-sizing: border-box;"></section><section style="margin:-40px 10px 0px;box-shadow:0px 0px 3px rgb(202, 155, 7);padding:10px;background-color:#fefefe;display:inline-block;transform: rotateZ(0deg);-webkit-transform: rotateZ(0deg);-moz-transform: rotateZ(0deg);-ms-transform: rotateZ(0deg);-o-transform: rotateZ(0deg);"><section><p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUHq8pbUyiaEE2ENQqDPSdVSnZKqUhuzrZGApKWXwnAYL0hy1Cc6XRkgg/0" style="display: block; width: auto;" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUHq8pbUyiaEE2ENQqDPSdVSnZKqUhuzrZGApKWXwnAYL0hy1Cc6XRkgg/0"></p></section></section><section style="margin-top:-45px;margin-left:auto;background: #ffd522;height: 50px;width: 50px;border-radius: 50px 0px 0px;box-sizing: border-box;"><br><br></section></section></section><section class="_editor"><p style="text-align: center;"><strong><span style="font-size: 14px;">（序言厅）</span></strong></p><section class="_editor" data-support="96编辑器" data-style-id="24326"><section style="margin:10px 0px;"><section style="background: #ffd522;height: 50px;width: 50px;border-radius: 0px 0px 50px;box-sizing: border-box;"></section><section style="margin:-40px 10px 0px;box-shadow:0px 0px 3px #ca9b07;padding:10px;background-color:#fefefe;display:inline-block;transform: rotateZ(0deg);-webkit-transform: rotateZ(0deg);-moz-transform: rotateZ(0deg);-ms-transform: rotateZ(0deg);-o-transform: rotateZ(0deg);"><section><p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUfKMiaxvKhIVXlibuTlTD4n6Kdkny0ClE3pyYNexxyPgSjehy0tffp58w/0" style="display: block; width: auto;" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUfKMiaxvKhIVXlibuTlTD4n6Kdkny0ClE3pyYNexxyPgSjehy0tffp58w/0"></p></section></section><section style="margin-top:-45px;margin-left:auto;background: #ffd522;height: 50px;width: 50px;border-radius: 50px 0px 0px;box-sizing: border-box;"><br></section></section></section><p style="text-align: center;"><strong><span style="font-size: 14px;">（海纳深沪）</span></strong></p><section class="_editor" data-support="96编辑器" data-style-id="24326"><section style="margin:10px 0px;"><section style="background: #ffd522;height: 50px;width: 50px;border-radius: 0px 0px 50px;box-sizing: border-box;"></section><section style="margin:-40px 10px 0px;box-shadow:0px 0px 3px #ca9b07;padding:10px;background-color:#fefefe;display:inline-block;transform: rotateZ(0deg);-webkit-transform: rotateZ(0deg);-moz-transform: rotateZ(0deg);-ms-transform: rotateZ(0deg);-o-transform: rotateZ(0deg);"><section><p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUxB6lGr6Dib1FhwaBl8KE30zwibKGiaBDOcViazzs76H6Wvu0po8twG551Q/0" style="display: block; width: auto;" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUxB6lGr6Dib1FhwaBl8KE30zwibKGiaBDOcViazzs76H6Wvu0po8twG551Q/0"></p></section></section><section style="margin-top:-45px;margin-left:auto;background: #ffd522;height: 50px;width: 50px;border-radius: 50px 0px 0px;box-sizing: border-box;"><br></section></section></section><p style="text-align: center;"><strong><span style="font-size: 14px;">（古木禅韵）</span></strong></p><section class="_editor" data-support="96编辑器" data-style-id="22771"><section style="margin: 10px 0px;box-sizing: border-box;"><section style="float: left;width: 20px;height: 20px;overflow: hidden;box-sizing: border-box;"><section style="margin-top: -10px;margin-left: -10px;width: 20px;height: 20px;border-radius: 50%;border-width: 1px;border-style: solid;border-color: #ffd522;box-sizing: border-box;"></section></section><section style="float: right;width: 20px;height: 20px;overflow: hidden;box-sizing: border-box;"><section style="margin-top: -10px;margin-right: -10px;float: right;width: 20px;height: 20px;border-radius: 50%;border-width: 1px;border-style: solid;border-color: #ffd522;box-sizing: border-box;"></section></section><section style="padding-right: 10px;padding-left: 10px;box-sizing: border-box;"><section style="height: 10px;border-top: 1px solid #ffd522;box-sizing: border-box;"></section></section><section style="border-left: 1px solid #ffd522;border-right: 1px solid #ffd522;border-top-color: #ffd522;border-bottom-color: #ffd522;box-sizing: border-box;"><section style="font-size: 14px; color: #ffd522; letter-spacing: 2px; line-height: 1; padding-right: 15px; padding-left: 15px; box-sizing: border-box; padding-bottom: 10px;"><section style="border-bottom: 1px solid #ffd522; border-top-width: 1px; border-right-width: 1px; border-left-width: 1px; border-top-color: #ffd522; border-right-color: #ffd522; border-left-color: #ffd522; padding-bottom: 15px; box-sizing: border-box;"><p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUGu8mibwSPicVpfYzuY7DkMAPzIWHzJh72KGVLOozP0YdbtcbfmFPnZgw/0" style="width: auto;"  alt="1563415205738061.jpg" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUGu8mibwSPicVpfYzuY7DkMAPzIWHzJh72KGVLOozP0YdbtcbfmFPnZgw/0"></p><section style="margin-top:1%;display:inline-block;width:49%;" data-width="49%"><p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibU7UIDbKXXbGr2YWaCIy7RJUWDAFamwNGltaz8bYMyAQ9Q5hqw6q9ULA/0" style="width: auto;" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibU7UIDbKXXbGr2YWaCIy7RJUWDAFamwNGltaz8bYMyAQ9Q5hqw6q9ULA/0"></p></section><section style="margin-left:2%;display:inline-block;width:49%;" data-width="49%"><p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUcPHsELWSzz9ibMc9wUVpqDWRIiclrsdmzuOK8HdPib9EUBSD8CTIZm9LA/0" style="width: auto;"  alt="1563415205549527.jpg" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUcPHsELWSzz9ibMc9wUVpqDWRIiclrsdmzuOK8HdPib9EUBSD8CTIZm9LA/0"></p></section></section></section></section><section style="float: left;width: 20px;height: 10px;overflow: hidden;box-sizing: border-box;"><section style="margin-bottom: -10px;margin-left: -10px;width: 20px;height: 20px;border-radius: 50%;border-width: 1px;border-style: solid;border-color: #ffd522;box-sizing: border-box;"></section></section><section style="float: right;width: 20px;height: 10px;overflow: hidden;box-sizing: border-box;"><section style="margin-bottom: -10px;margin-right: -10px;float: right;width: 20px;height: 20px;border-radius: 50%;border-width: 1px;border-style: solid;border-color: #ffd522;box-sizing: border-box;"></section></section><section style="padding-right: 10px;padding-left: 10px;box-sizing: border-box;"><section style="height: 10px;border-bottom: 1px solid #ffd522;box-sizing: border-box;"></section></section></section></section><p style="text-align: center;"><strong><span style="font-size: 14px;">（牡蛎遗迹）</span></strong><span style="font-size: 14px;"><br></span></p><section class="_editor" data-support="96编辑器" data-style-id="24326"><section style="margin:10px 0px;"><section style="background: #ffd522;height: 50px;width: 50px;border-radius: 0px 0px 50px;box-sizing: border-box;"></section><section style="margin:-40px 10px 0px;box-shadow:0px 0px 3px #ca9b07;padding:10px;background-color:#fefefe;display:inline-block;transform: rotateZ(0deg);-webkit-transform: rotateZ(0deg);-moz-transform: rotateZ(0deg);-ms-transform: rotateZ(0deg);-o-transform: rotateZ(0deg);"><section><p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUjxMibc5fRHDAiaDOJTsX5pFRIU0IvdR1cCEd1SkhkRsjtkFkWX9HS7Cw/0" style="display: block; width: auto;" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUjxMibc5fRHDAiaDOJTsX5pFRIU0IvdR1cCEd1SkhkRsjtkFkWX9HS7Cw/0"></p></section></section><section style="margin-top:-45px;margin-left:auto;background: #ffd522;height: 50px;width: 50px;border-radius: 50px 0px 0px;box-sizing: border-box;"><br></section></section></section><p style="text-align: center;"><strong><span style="font-size: 14px;">（地质景观）</span></strong></p><section class="_editor" data-support="96编辑器" data-style-id="24326"><section style="margin:10px 0px;"><section style="background: #ffd522;height: 50px;width: 50px;border-radius: 0px 0px 50px;box-sizing: border-box;"></section><section style="margin:-40px 10px 0px;box-shadow:0px 0px 3px #ca9b07;padding:10px;background-color:#fefefe;display:inline-block;transform: rotateZ(0deg);-webkit-transform: rotateZ(0deg);-moz-transform: rotateZ(0deg);-ms-transform: rotateZ(0deg);-o-transform: rotateZ(0deg);"><section><p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUssInvys8QbnBnRT3eE5a2H8iab0GKZYBKCHYbiciapibsehvYnbniaFVA9A/0" style="display: block; width: auto;" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUssInvys8QbnBnRT3eE5a2H8iab0GKZYBKCHYbiciapibsehvYnbniaFVA9A/0"></p></section></section><section style="margin-top:-45px;margin-left:auto;background: #ffd522;height: 50px;width: 50px;border-radius: 50px 0px 0px;box-sizing: border-box;"><br></section></section></section><p style="text-align: center;"><strong><span style="font-size: 14px;">（石器印痕）</span></strong></p><section class="_editor" data-support="96编辑器" data-style-id="24050"><section style="margin:10px 0px;"><section style="margin:0px 20px;"><section style="display: flex;justify-content:center;align-items: center;"><section style="width:49%;" data-width="49%"><p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUJDYuRue2ImETDm066IibXChhIynkMkQasj3L1lGONKU4Jp6GGg3DnPg/0" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUJDYuRue2ImETDm066IibXChhIynkMkQasj3L1lGONKU4Jp6GGg3DnPg/0"></p></section><section style="margin-left:2%;width:49%;" data-width="49%"><p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUYKQwdevxAWtNkX4H7h1kG9KjhqD35eianRicbOOkOL6FuiaIorkSfGhWg/0" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUYKQwdevxAWtNkX4H7h1kG9KjhqD35eianRicbOOkOL6FuiaIorkSfGhWg/0"></p></section></section></section><section style="margin-top:-30px;background-color:#ffd522;width:100%;height:40px;" data-width="100%"></section></section></section><p style="text-align: center;"><strong><span style="font-size: 14px;">（探本溯源）</span></strong></p><section class="_editor" data-support="96编辑器" data-style-id="24559"><section style="margin-top: 10px; margin-bottom: 10px; text-align: center;"><section style="display:inline-block;"><section style="display: flex;justify-content:center;align-items: center;"><section><section style="width:15px;height:2px;background-color:#ffdd6d;"></section><section style="margin-left:auto;margin-top:3px;margin-bottom:3px;width:10px;height:2px;background-color:#ffdd6d;"></section><section style="width:15px;height:2px;background-color:#ffdd6d;"></section></section><section style="border-style: solid; border-width: 1px; border-color: rgb(255, 221, 109); padding-top: 5px; padding-bottom: 5px; box-sizing: border-box;"><section style="background-color: rgb(255, 221, 109); padding-right: 15px; padding-left: 15px; box-sizing: border-box;"><p style="letter-spacing:2px;"><strong><span style="color: #353232; font-size: 14px;">深沪湾海底古森林遗迹自然保护区海洋科普馆二楼</span></strong></p></section></section><section style="display: flex;justify-content:center;align-items: center;"><section><section style="width:15px;height:2px;background-color:#ffdd6d;"></section><section style="margin-top:3px;margin-bottom:3px;width:10px;height:2px;background-color:#ffdd6d;"></section><section style="width:15px;height:2px;background-color:#ffdd6d;"><br></section></section></section></section></section></section></section><section class="_editor" data-support="96编辑器" data-style-id="23364"><section style="margin-top: 10px;margin-bottom: 10px;"><section style="display: flex;justify-content: space-between;"><section><section style="width: 6px;height: 60px;background-color: #ffd522;margin-top: 18px;"></section></section></section><section style="border-width: 1px;border-style: solid;border-color: #ffdd6d;margin: -82px 3px 5px;box-sizing: border-box;"><section style="padding: 20px 15px;box-sizing: border-box;"><p style="display:inline-block;width:49%;" data-width="49%"><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUfyKhmxHSX92uTPtVOYsNV8FUNNz1CZx8AmEvb9stbylkrAuzO6ECuQ/0" style="display: block;width: auto;" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUfyKhmxHSX92uTPtVOYsNV8FUNNz1CZx8AmEvb9stbylkrAuzO6ECuQ/0"></p><p style="margin-left:2%;display:inline-block;width:49%;" data-width="49%"><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUx71bwJb7dQ4mZ9AzbZ0Z0cRkqjicyVfEia16kcZL8rVNWS9jkjapdzkg/0" style="display: block;width: auto;" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUx71bwJb7dQ4mZ9AzbZ0Z0cRkqjicyVfEia16kcZL8rVNWS9jkjapdzkg/0"></p><p style="display:inline-block;width:49%;" data-width="49%"><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUYMDZtSdLwr8UqvlDDTYiaiazZrgDsOOrcu4vjc1qh2xdm1CTSpfSmJ6g/0" style="display: block;width: auto;" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUYMDZtSdLwr8UqvlDDTYiaiazZrgDsOOrcu4vjc1qh2xdm1CTSpfSmJ6g/0"></p><p style="margin-left:2%;display:inline-block;width:49%;" data-width="49%"><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUJialc1sxqz9OYrooicpDytfTiaoqWgvaJCxV14E2qxszmbYuhZKp2jTPw/0" style="display: block;width: auto;" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUJialc1sxqz9OYrooicpDytfTiaoqWgvaJCxV14E2qxszmbYuhZKp2jTPw/0"></p></section></section></section><section style="width:60px;height:6px;background-color:#ffd522;margin-left:auto;margin-top: -14px;margin-right:20px;"><br></section></section><p style="text-align: center;"><span style="font-size: 14px;"><strong>（我们的星球）</strong></span></p><section class="_editor" data-support="96编辑器" data-style-id="24521"><section style="margin:10px 0px;"><section style="display: flex;justify-content:center;align-items:flex-start;"><section style="width:50%;" data-width="50%"><section style="border-style: solid;border-width: 1px;border-color: #ffd522;display: inline-block;box-sizing: border-box;"><section style="margin:8px -8px -8px 8px;"><p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUaYXp0GAp72R82iaZ0QV80ianqnW3mDJiaYgSgNUiabsMXRXwRvUbHp2Wyw/0" style="display: block;width: auto;"  alt="1563416550743697.jpg" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUaYXp0GAp72R82iaZ0QV80ianqnW3mDJiaYgSgNUiabsMXRXwRvUbHp2Wyw/0"></p></section></section></section><section style="width:50%;" data-width="50%"><section style="margin-left:20px;"><p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibU88dKKjbuasldz2scmPAbQPjp2qTichC00bicwViaB3lwJnTZrybR9IjUA/0" style="display: block;width: auto;"  alt="1563416482337911.jpg" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibU88dKKjbuasldz2scmPAbQPjp2qTichC00bicwViaB3lwJnTZrybR9IjUA/0"></p></section><section style="margin-left: -20px;margin-top: 10px;border-style: solid;border-width: 1px;border-color: #ffd522;display: inline-block;padding: 10px;background-color: #fefefe;box-sizing: border-box;"><p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUMibQ8eYr7YibbzsfXxNXu4cuV6ng585wjTZ6N3LSBe5VcTWMOs8959ibQ/0" style="display: block;width: auto;"  alt="1563416482211248.jpg" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUMibQ8eYr7YibbzsfXxNXu4cuV6ng585wjTZ6N3LSBe5VcTWMOs8959ibQ/0"></p></section></section></section></section></section><p style="text-align: center;"><span style="font-size: 14px;"><strong>（生物进化）</strong></span></p></section><section class="_editor" data-support="96编辑器" data-style-id="24411"><section style="margin:10px 0px;"><section style="background-color: #ffdd6d;padding: 10px;box-sizing: border-box;"><section style="box-shadow: #4a4a4a 0px 0px 5px;background-color: #fefefe;padding: 10px;box-sizing: border-box;"><section style="width:100%;margin-bottom:8px;" data-width="100%"><p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUf4c6eDAGFLeHo89Ys4IHB3vOWnTy8BEUCia6ruVLibYmFYIm2hsmIxLw/0" style="display: block;width: auto;" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUf4c6eDAGFLeHo89Ys4IHB3vOWnTy8BEUCia6ruVLibYmFYIm2hsmIxLw/0"></p></section><section style="display: flex;justify-content:center;align-items: center;"><section style="width:49%;" data-width="49%"><p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUbsv0ibSe5DEtUcwmiaORXnuJa22TzJ8icPn7F0U0xiaic3nYJbfs1RGdiccQ/0" style="display: block;width: auto;" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUbsv0ibSe5DEtUcwmiaORXnuJa22TzJ8icPn7F0U0xiaic3nYJbfs1RGdiccQ/0"></p></section><section style="width:49%;margin-left:2%;" data-width="49%"><p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUhfwibBspG47tdSmEDCWtAOolDp99ck7aTGfW6RbIf1iaibOkqcZgywD5w/0" style="display: block;width: auto;" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUhfwibBspG47tdSmEDCWtAOolDp99ck7aTGfW6RbIf1iaibOkqcZgywD5w/0"></p></section></section></section></section></section></section><section class="_editor"><p style="text-align: center;"><span style="font-size: 14px;"><strong>（环境变迁与环境保护）</strong></span></p><section class="_editor" data-support="96编辑器" data-style-id="18006"><section style="margin-left:10px;"><section style="display: inline-block;width: 90%;vertical-align: top;box-sizing: border-box;" data-width="90%"><section style="text-align: right;box-sizing: border-box;"><section style="display: inline-block;vertical-align: top;width: 45%;box-sizing: border-box;" data-width="45%"><section><section style="text-align: center;margin-top: 10px;margin-right: 0%;margin-left: 0%;box-sizing: border-box;transform: translate3d(-3px, 0px, 0px);-webkit-transform: translate3d(-3px, 0px, 0px);-moz-transform: translate3d(-3px, 0px, 0px);-ms-transform: translate3d(-3px, 0px, 0px);-o-transform: translate3d(-3px, 0px, 0px);"><section style="max-width: 100%;vertical-align: middle;display: inline-block;border-width: 2px;border-radius: 0px;border-style: solid;border-color: #ffd522;overflow: hidden !important;box-sizing: border-box;"><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibU37LQClOqd2KpxsbOnksm7byqNiaukX0C2oxWibxqgFc6HbbFWUdBE2qQ/0" style="vertical-align: middle;box-sizing: border-box;" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibU37LQClOqd2KpxsbOnksm7byqNiaukX0C2oxWibxqgFc6HbbFWUdBE2qQ/0"></section></section></section><section><section style="box-sizing: border-box;transform: translate3d(-2px, 0px, 0px);-webkit-transform: translate3d(-2px, 0px, 0px);-moz-transform: translate3d(-2px, 0px, 0px);-ms-transform: translate3d(-2px, 0px, 0px);-o-transform: translate3d(-2px, 0px, 0px);"><section style="text-align: left;letter-spacing: 1px;box-sizing: border-box;"><p style="text-align: center;box-sizing: border-box;"><span style="background-color: #ffdd6d;box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="color: #ffffff;font-size: 12px;box-sizing: border-box;">&nbsp;1&nbsp;</span></strong></span><br style="box-sizing: border-box;"></p></section></section></section><section><section style="text-align: center;margin-top: 8px;margin-right: 0%;margin-left: 0%;box-sizing: border-box;transform: translate3d(-3px, 0px, 0px);-webkit-transform: translate3d(-3px, 0px, 0px);-moz-transform: translate3d(-3px, 0px, 0px);-ms-transform: translate3d(-3px, 0px, 0px);-o-transform: translate3d(-3px, 0px, 0px);"><section style="max-width: 100%;vertical-align: middle;display: inline-block;border-width: 2px;border-radius: 0px;border-style: solid;border-color: #ffd522;overflow: hidden !important;box-sizing: border-box;"><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUMMoAUALt3YK1X3grIwE3rw5mibib8hP7VMwhkdhfyLzrkmvExiaSYdjPg/0" style="vertical-align: middle;box-sizing: border-box;" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUMMoAUALt3YK1X3grIwE3rw5mibib8hP7VMwhkdhfyLzrkmvExiaSYdjPg/0"></section></section></section></section><section style="display: inline-block;vertical-align: top;width: 55%;box-sizing: border-box;" data-width="55%"><section><section style="margin-top: 10px;margin-right: 0%;margin-left: 0%;box-sizing: border-box;transform: translate3d(3px, 0px, 0px);-webkit-transform: translate3d(3px, 0px, 0px);-moz-transform: translate3d(3px, 0px, 0px);-ms-transform: translate3d(3px, 0px, 0px);-o-transform: translate3d(3px, 0px, 0px);"><section style="max-width: 100%;vertical-align: middle;display: inline-block;width: 100%;border-color: #ffffff;border-width: 2px;border-radius: 0px;border-style: solid;box-shadow: #000000 0px 0px 0px;overflow: hidden !important;box-sizing: border-box;" data-width="100%"><img src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUehaSmkbkb3GHLEFibbiaHiblibRIoHMrYKHdhjVrVNriak8kQicjjgRqUlmQ/0" style="vertical-align: middle;width: 100%;box-sizing: border-box;" data-width="100%" _src="http://mmbiz.qpic.cn/mmbiz_jpg/rcmAOn30ytNKVCnHzrCtcCH1hhAXNbibUehaSmkbkb3GHLEFibbiaHiblibRIoHMrYKHdhjVrVNriak8kQicjjgRqUlmQ/0"></section></section></section></section></section></section></section><section><section style="box-sizing: border-box;"><section style="display: inline-block;vertical-align: top;width: 50%;box-sizing: border-box;" data-width="50%"><section><section style="box-sizing: border-box;transform: translate3d(-2px, 0px, 0px);-webkit-transform: translate3d(-2px, 0px, 0px);-moz-transform: translate3d(-2px, 0px, 0px);-ms-transform: translate3d(-2px, 0px, 0px);-o-transform: translate3d(-2px, 0px, 0px);"><section style="letter-spacing: 1px;box-sizing: border-box;"><p style="text-align: center;box-sizing: border-box;"><span style="background-color: #ffdd6d;box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="color: #ffffff;font-size: 12px;box-sizing: border-box;">&nbsp;2&nbsp;</span></strong></span><br style="box-sizing: border-box;"></p></section></section></section></section><section style="display: inline-block;vertical-align: top;width: 50%;box-sizing: border-box;" data-width="50%"><section><section style="box-sizing: border-box;transform: translate3d(-5px, 0px, 0px);-webkit-transform: translate3d(-5px, 0px, 0px);-moz-transform: translate3d(-5px, 0px, 0px);-ms-transform: translate3d(-5px, 0px, 0px);-o-transform: translate3d(-5px, 0px, 0px);"><section style="letter-spacing: 1px;box-sizing: border-box;"><p style="text-align: center;box-sizing: border-box;"><span style="background-color: #ffdd6d;box-sizing: border-box;"><strong style="box-sizing: border-box;"><span style="color: #ffffff;font-size: 12px;box-sizing: border-box;">&nbsp;3&nbsp;</span></strong></span><br style="box-sizing: border-box;"></p></section></section></section></section></section></section></section><p style="text-align: center;"><span style="font-size: 14px;"><strong>（人物深沪）</strong></span></p><section class="_editor" data-support="96编辑器" data-style-id="16583"><section style="margin-top: 10px;margin-right: 0%;margin-left: 0%;text-align: center;box-sizing: border-box;"><section style="display: inline-block;width: 80%;vertical-align: top;border-style: none;border-width: 0px;border-radius: 5px;border-color: #eaad00;background-color: rgba(253, 237, 160, 0.51);padding: 5px;box-sizing: border-box;" data-width="80%"><section style="margin: -10px 0% -20px;box-sizing: border-box;"><section style="font-size: 14px;color: #fcb441;letter-spacing: 2px;line-height: 1.6;box-sizing: border-box;"><p style="box-sizing: border-box;"><strong style="box-sizing: border-box;">THE&nbsp; END</strong></p></section></section></section></section></section></section><section class="_editor" data-support="96编辑器" data-style-id="24533"><section style="margin-top: 10px; margin-bottom: 10px; text-align: center;"><section style="display: flex;justify-content:center;align-items: center;"><p style="width: 1.5em; letter-spacing: 2px;"><img src="http://mmbiz.qpic.cn/mmbiz_gif/Ljib4So7yuWgG3xFsQDtWATJ58gNIrtdqydLHxOPYo1NzNm55nAia6ueU87C0IRwHDWooERFI5GwK3RYnjofpbrQ/0?wx_fmt=gif" _src="http://mmbiz.qpic.cn/mmbiz_gif/Ljib4So7yuWgG3xFsQDtWATJ58gNIrtdqydLHxOPYo1NzNm55nAia6ueU87C0IRwHDWooERFI5GwK3RYnjofpbrQ/0?wx_fmt=gif"></p><section style="margin-right: 10px; margin-left: 10px; box-shadow: #ff9800 0px 0px 5px;"><p style="width: 6em; letter-spacing: 2px;"><img src="http://img.96weixin.com/ueditor/20190719/1563500494139915.jpg" style="display:block;"  alt="1563500494139915.jpg" _src="http://img.96weixin.com/ueditor/20190719/1563500494139915.jpg"></p></section><p style="width: 1.5em; letter-spacing: 2px;transform: rotateX(0deg) rotateY(-180deg) rotateZ(0deg);-webkit-transform: rotateX(0deg) rotateY(-180deg) rotateZ(0deg);-moz-transform: rotateX(0deg) rotateY(-180deg) rotateZ(0deg);-ms-transform: rotateX(0deg) rotateY(-180deg) rotateZ(0deg);-o-transform: rotateX(0deg) rotateY(-180deg) rotateZ(0deg);"><img src="http://mmbiz.qpic.cn/mmbiz_gif/Ljib4So7yuWgG3xFsQDtWATJ58gNIrtdqydLHxOPYo1NzNm55nAia6ueU87C0IRwHDWooERFI5GwK3RYnjofpbrQ/0?wx_fmt=gif" _src="http://mmbiz.qpic.cn/mmbiz_gif/Ljib4So7yuWgG3xFsQDtWATJ58gNIrtdqydLHxOPYo1NzNm55nAia6ueU87C0IRwHDWooERFI5GwK3RYnjofpbrQ/0?wx_fmt=gif"></p></section><section style="margin-top: 15px; background-color: #fdcd00; display: inline-block; padding: 1px 15px; box-sizing: border-box;"><p style="letter-spacing: 2px;"><span style="color: #ffffff; font-size: 15px;">长按二维码关注我们<mpchecktext id="1561770565514_0.9205595873479782"></mpchecktext></span></p></section></section></section><section class="_editor"><p><br></p></section>
+                                    </div>
+                                </div>
+                                </li>
+                            </ul>
+                        </div>
+				
+					</div>
+					
+					<!-- post -->
+						
+					<!-- end posts -->
+					<!-- notes navigation -->
+					
+				</div>
+				
+				<!-- sidebar -->
+				<aside class="one-third grey" id="news_right">
+				<div id="sidebar">
+				
+					<!-- recent posts widget -->
+					<div class="widget">
+						<h5 class="stripe-heading fz_1625">最新行业观点</h5>
+						<div class="widget-content">
+							<ul class="recent-posts" id="right_news">
+								
+								<li><a href="news_zhongkong.html" target="_blank">多媒体中央控制系统</a>
+								<span>2019-08-08</span></li>
+								<li><a href="news_gaoxin.html" target="_blank">荣获“厦门市市级高新技术企业”</a>
+								<span>2019-07-30</span></li>
+								<li><a href="news_shenhuwan.html" target="_blank">深沪湾海底古森林遗迹自然保护区海洋科普馆</a>
+								<span>2019-07-18</span></li>
+							    <li><a href="news_hudong.html" target="_blank">互动音乐墙</a>
+								<span>2019-06-29</span></li>
+							        
+							            <li><a href="news_quanxi.html" target="_blank">全息沉浸式投影</a>
+								<span>2019-06-19</span></li>
+							        
+								<li><a href="news_quanxi - 2.html" target="_blank">全息投影</a>
+								<span>2019-06-18</span></li>
+							        
+								
+
+							</ul>
+						</div>
+					</div>
+				</div>
+				</aside>
+				<!-- clear floats -->
+				<div class="clear">
+				</div>
+			</section>
+                <!-- widgetized footer -->
+                
+<!-- widgetized footer -->
+<style type="text/css">
+.row .four.columns{width:23.3%;}
+.link_line{padding-top:10px;}
+</style>
+<footer class="widget-ftr stripe-bg" id="footer_top">
+	<div class="content-block dark">
+    	<div class="row large midtoppadding">
+        	<!-- widget -->
+        	<div class="four columns widget-block">
+            	<h6 class="widget-heading"><img src="images/footerLogo.png" /></h6>
+            	<h5 class="style_1">无论你在世界的任何一个地方，<br />只要看见COCO公司的商标，<br />就是质量和信誉的保证。</h5>
+                <dl class="footer_link clearfix">
+                	<!--<dd><a href="service.html">新业务</a></dd>
+                    <dd><a href="news_details.html#216172782113783808">新闻+ VIEWS</a></dd>-->                
+                </dl>
+        	</div>
+        	<!-- widget -->
+        	<div class="four columns widget-block">
+            	<h6 class="widget-heading title_1">新闻资讯</h6>
+            	<ul class="news_list">
+					
+					<li>
+                    	<span>2019年06月29日</span>
+            			<a href="news_hudong.html">互动音乐墙</a>
+                    </li>
+            	        
+            	        <li>
+                    	<span>2019年06月19日</span>
+            			<a href="news_quanxi.html">全息沉浸式投影</a>
+                    </li>
+            	        
+            	        <li>
+                    	<span>2019年06月18日</span>
+            			<a href="news_quanxi - 2.html">全息投影</a>
+                    </li>
+                	
+            	</ul>
+                <p><a href="news.html" class="col_f00">查看更多</a></p>
+        	</div>
+
+        	<!-- widget -->
+        	<div class="four columns widget-block">
+            	<h6 class="widget-heading title_1">和我们取得联系</h6>
+                <h3>188-5929-0801</h3>
+            	<p class="greytext midmargin meta">
+                 	厦门思明观音山运营中心8号楼
+            	</p>
+                <p>
+                	
+                </p>
+        	</div>
+        	
+    	</div>
+	</div>
+</footer>
+<!-- site credit -->
+<footer id="colophon">
+	<div class="row large">
+		<div class="six columns">
+    		<p>
+         		
+   	 		</p>
+		</div>
+		<div class="six columns">
+            <!-- social network links -->
+            <div class="text-right">
+                
+            </div>
+		</div>
+	</div>
+</footer>
+<!-- site credit -->
+
+ 
+
+
+    <script src="js/jquery-2.0.2.min.js"></script>
+
+    <script src="js/gumby.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+
+    <script src="js/main.js"></script>
+
+    
+<!-- only include animate.js on 
+	pages you want to use animations on
+	<script src="js/animate.js"></script> -->
+
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+	   chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7 ]>
+	<script src="//ajax.googleapis.com/ajax/chrome-frame/1.0.3/CFInstall.min.js"></script>
+	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+	<![endif]-->
+</body>
+</html>
